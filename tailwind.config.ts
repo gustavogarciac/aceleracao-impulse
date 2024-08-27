@@ -26,6 +26,7 @@ const config = {
           },
           blue: {
             default: '#005FEE',
+            dark: '#0051CC',
           },
         },
         border: 'hsl(var(--border))',
