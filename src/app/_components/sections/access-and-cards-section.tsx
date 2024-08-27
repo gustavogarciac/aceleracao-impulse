@@ -2,7 +2,7 @@ import React from 'react'
 
 import { Button } from '@/components/button'
 import { Card, CardContent, CardTitle } from '@/components/card'
-import { cards } from '@/consts/cards'
+import { whosTheProgramForCards } from '@/consts/cards'
 
 export const AccessAndCardsSection = () => {
   return (
@@ -50,7 +50,7 @@ export const AccessAndCardsSection = () => {
         O Programa é para você que:
       </h2>
 
-      {cards.map((card) => (
+      {whosTheProgramForCards.map((card) => (
         <Card key={card.title}>
           <CardTitle>{card.title}</CardTitle>
           <CardContent>{card.content}</CardContent>

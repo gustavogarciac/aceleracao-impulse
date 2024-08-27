@@ -1,4 +1,4 @@
-export const cards = [
+export const whosTheProgramForCards = [
   {
     title: 'Quer sair da CLT e ir para o Digital',
     content:
@@ -28,5 +28,27 @@ export const cards = [
     title: 'Busca por Flexibilidade e Autonomia',
     content:
       'Se a liberdade de trabalhar de qualquer lugar e ter um horário flexível é importante para você, nosso serviço pode direcionar sua carreira e acelerar seus resultados',
+  },
+]
+
+export const nextStepsCards = [
+  {
+    title: 'Inscreva-se e Escolha seu Plano:',
+    content: 'Selecione entre nossos planos e comece sua jornada.',
+  },
+  {
+    title: 'Conecte-se com seu Mentor:',
+    content:
+      'Agende sessões semanais com especialistas que trabalham em home office.',
+  },
+  {
+    title: 'Receba Feedback e Orientação:',
+    content:
+      'Tenha sessões de 1 hora por semana focadas em suas necessidades específicas.',
+  },
+  {
+    title: 'Acompanhe seu Progresso:',
+    content:
+      'Veja suas melhorias ao longo do tempo e sinta-se confiante em suas habilidades e direções.',
   },
 ]

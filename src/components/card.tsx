@@ -1,29 +1,72 @@
+import { cva, type VariantProps } from 'class-variance-authority'
 import React from 'react'
+
+import { cn } from '@/lib/utils'
+
+const cardVariants = cva('px-5 py-12 rounded-2xl flex flex-col gap-5', {
+  variants: {
+    variant: {
+      default: 'border border-zinc-50 text-center',
+      secondary: 'bg-zinc-100 text-start',
+    },
+  },
+  defaultVariants: {
+    variant: 'default',
+  },
+})
 
 type CardProps = {
   children: React.ReactNode
 }
 
-type CardTitleProps = CardProps & object
+type CardContainerProps = CardProps &
+  VariantProps<typeof cardVariants> & {
+    className?: string
+  }
+
+type CardTitleProps = CardProps & {
+  variant?: VariantProps<typeof cardVariants>['variant']
+}
 
 type CardContentProps = CardProps & object
 
-const Card = ({ children }: CardProps) => {
+type CardIndexProps = {
+  index: number
+  variant?: VariantProps<typeof cardVariants>['variant']
+}
+
+const Card = ({ children, variant }: CardContainerProps) => {
+  return <div className={cn(cardVariants({ variant }))}>{children}</div>
+}
+
+const CardIndex = ({ index, variant }: CardIndexProps) => {
   return (
-    <div className="px-5 py-12 border rounded-2xl border-zinc-50 flex flex-col gap-5">
-      {children}
-    </div>
+    <span
+      className={cn(
+        'text-start font-bold text-3xl',
+        variant === 'secondary' && 'text-theme-blue-default',
+      )}
+    >
+      {index.toString().padStart(2, '0')}
+    </span>
   )
 }
 
-const CardTitle = ({ children }: CardTitleProps) => {
-  return <h5 className="font-bold text-2xl text-center">{children}</h5>
+const CardTitle = ({ children, variant }: CardTitleProps) => {
+  return (
+    <h5
+      className={cn(
+        'font-bold text-2xl',
+        variant === 'secondary' && 'text-theme-blue-default',
+      )}
+    >
+      {children}
+    </h5>
+  )
 }
 
 const CardContent = ({ children }: CardContentProps) => {
-  return (
-    <div className="leading-relaxed font-medium text-center">{children}</div>
-  )
+  return <div className="leading-relaxed font-medium">{children}</div>
 }
 
-export { Card, CardTitle, CardContent }
+export { Card, CardIndex, CardTitle, CardContent }
