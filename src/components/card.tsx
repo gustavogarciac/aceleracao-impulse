@@ -10,7 +10,7 @@ type CardContentProps = CardProps & object
 
 const Card = ({ children }: CardProps) => {
   return (
-    <div className="px-5 py-12 border rounded-2xl border-zinc-50 flex flex-col gap-2">
+    <div className="px-5 py-12 border rounded-2xl border-zinc-50 flex flex-col gap-5">
       {children}
     </div>
   )

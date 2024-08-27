@@ -5,7 +5,7 @@ import { ProgramTitle } from './program-title'
 
 export const Hero = () => {
   return (
-    <section className="flex flex-col items-center justify-center gap-12 pt-32 px-6">
+    <section className="flex flex-col items-center justify-center gap-12 pt-32 px-6 pb-10">
       <ProgramTitle />
 
       <h2 className="subtitle font-bold text-center">
