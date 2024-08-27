@@ -1,3 +1,5 @@
+import { UpPageButton } from '@/components/up-page-button'
+
 import { Footer } from './_components/footer'
 import { AccessAndCardsSection } from './_components/sections/access-and-cards-section'
 import { CareerGrowthSection } from './_components/sections/career-growth-section'
@@ -28,6 +30,8 @@ export default function Home() {
       <FrequentQuestionsSection />
 
       <Footer />
+
+      <UpPageButton />
     </main>
   )
 }
