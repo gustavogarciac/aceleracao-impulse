@@ -1,9 +1,17 @@
+'use client'
+
+import { motion } from 'framer-motion'
 import Image from 'next/image'
 import React from 'react'
 
 export const ProgramTitle = () => {
   return (
-    <h1 className="text-3xl font-semibold text-theme-blue-default relative leading-tighter text-center">
+    <motion.h1
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ type: 'spring', stiffness: 260, damping: 20 }}
+      className="text-3xl font-semibold text-theme-blue-default relative leading-tighter text-center"
+    >
       Programa de <br />
       <strong className="relative">
         Aceleração Impulse
@@ -15,6 +23,6 @@ export const ProgramTitle = () => {
           className="absolute -bottom-1 -right-7"
         />
       </strong>
-    </h1>
+    </motion.h1>
   )
 }

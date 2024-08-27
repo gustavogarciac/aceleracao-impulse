@@ -1,4 +1,7 @@
+'use client'
+
 import { cva, type VariantProps } from 'class-variance-authority'
+import { motion } from 'framer-motion'
 import React from 'react'
 
 import { cn } from '@/lib/utils'
@@ -36,7 +39,22 @@ type CardIndexProps = {
 }
 
 const Card = ({ children, variant }: CardContainerProps) => {
-  return <div className={cn(cardVariants({ variant }))}>{children}</div>
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{
+        duration: 0.5,
+        type: 'spring',
+        ease: 'linear',
+        stiffness: 340,
+        dumping: 120,
+      }}
+      className={cn(cardVariants({ variant }))}
+    >
+      {children}
+    </motion.div>
+  )
 }
 
 const CardIndex = ({ index, variant }: CardIndexProps) => {

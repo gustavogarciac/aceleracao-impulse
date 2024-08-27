@@ -13,11 +13,19 @@ export const Footer = () => {
             height={60}
           />
 
-          <div className="flex flex-col gap-12 md:gap-2 md:text-end text-center">
-            <a href="#politics" target="_blank" className="underline">
+          <div className="flex flex-col gap-12 md:gap-2 md:text-end text-">
+            <a
+              href="https://beimpulse.com/politica-de-privacidade"
+              target="_blank"
+              className="underline"
+            >
               Política de Privacidade
             </a>
-            <a href="#terms" target="_blank" className="underline">
+            <a
+              href="https://beimpulse.com/termos-de-uso"
+              target="_blank"
+              className="underline"
+            >
               Termos de Uso
             </a>
           </div>
