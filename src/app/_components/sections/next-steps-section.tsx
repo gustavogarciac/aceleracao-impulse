@@ -10,7 +10,7 @@ export const NextStepsSection = () => {
         Qual o próximo passo?
       </h2>
 
-      <div className="grid grid-cols-1 gap-12 md:grid-cols-2 md:gap-2 lg:max-w-3xl mx-auto">
+      <div className="grid grid-cols-1 gap-12 md:grid-cols-2 md:gap-2 lg:max-w-4xl mx-auto">
         {nextStepsCards.map((card, index) => (
           <Card key={card.title} variant={'secondary'}>
             <CardIndex index={index + 1} variant={'secondary'} />

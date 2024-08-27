@@ -3,12 +3,12 @@ import React from 'react'
 
 export const CareerGrowthSection = () => {
   return (
-    <section className="flex flex-col items-center justify-center gap-12 pt-20 md:pt-32 px-6 pb-20 md:pb-32 bg-zinc-100">
-      <h2 className="font-bold subtitle text-2xl text-center">
+    <section className="flex flex-col items-center justify-center gap-12 pt-20 md:pt-28 px-6 pb-20 md:pb-28 bg-zinc-100">
+      <h2 className="font-bold subtitle text-2xl lg:text-3xl text-center">
         O Crescimento da sua Carreira
       </h2>
 
-      <div className="flex flex-col gap-5 items-center md:flex-row md:max-w-2xl md:justify-between w-full">
+      <div className="flex flex-col gap-5 items-center md:flex-row md:max-w-4xl md:justify-between w-full">
         <div className="flex flex-col gap-px w-full">
           <span className="text-theme-blue-default font-semibold">Hoje:</span>
           <ul className="space-y-0.5">

@@ -9,7 +9,7 @@ export const PricingSection = () => {
         Escolha seu Plano
       </h2>
 
-      <div className="flex flex-col gap-12 items-center md:flex-row md:items-start md:gap-6 max-w-3xl mx-auto">
+      <div className="flex flex-col gap-12 items-center md:flex-row md:items-start md:gap-6 max-w-4xl mx-auto">
         <div className="space-y-4 w-full">
           <div className="flex flex-col gap-9 bg-zinc-950 text-zinc-50 w-full rounded-lg px-6 py-10 items-center min-h-[500px] justify-start">
             <h5 className="text-yellow-500 font-bold text-xl leading-relaxed">
