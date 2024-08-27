@@ -11,7 +11,7 @@ export const TestimonialsSection = () => {
         Nossos alunos estão comentando...
       </h2>
 
-      <div className="flex flex-col gap-14 w-full">
+      <div className="flex flex-col gap-14 w-full md:grid grid-cols-2 md:gap-10 max-w-2xl mx-auto">
         {testimonials.map((test) => (
           <div key={`${test.name}-testimonial`} className="space-y-3">
             <div className="flex flex-row items-center gap-3 w-full">
