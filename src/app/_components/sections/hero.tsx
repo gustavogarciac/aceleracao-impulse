@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 
-import { ProgramTitle } from './program-title'
+import { ProgramTitle } from '../program-title'
 
 export const Hero = () => {
   return (
