@@ -13,7 +13,7 @@ export const ProgramTitle = () => {
       className="text-3xl font-semibold text-theme-blue-default relative leading-tighter text-center"
     >
       Programa de <br />
-      <strong className="relative">
+      <strong className="relative pr-1">
         Aceleração Impulse
         <Image
           src={'/assets/project-title.svg'}
