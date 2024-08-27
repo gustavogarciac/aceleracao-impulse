@@ -1,5 +1,6 @@
 import { Footer } from './_components/footer'
 import { AccessAndCardsSection } from './_components/sections/access-and-cards-section'
+import { CareerGrowthSection } from './_components/sections/career-growth-section'
 import { DevelopmentPlanSection } from './_components/sections/development-plan-section'
 import { FrequentQuestionsSection } from './_components/sections/frequent-questions-section'
 import { Hero } from './_components/sections/hero'
@@ -17,6 +18,8 @@ export default function Home() {
       <DevelopmentPlanSection />
 
       <NextStepsSection />
+
+      <CareerGrowthSection />
 
       <PricingSection />
 
